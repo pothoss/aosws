@@ -58,6 +58,7 @@ nav#sidenav a {
   align-items: baseline;
   line-height: 33px;
   margin-left: 5px;
+  color: FFFFFF;
 }
 
 .buttonmenu.reduced {
@@ -73,7 +74,7 @@ nav#sidenav a {
 .innerbtn {
   width: 35px;
   height: 5px;
-  background-color: 1A1A1A;
+  background-color: FFFFFF;
 }
 
 .bar1, .bar2, .bar3 {
@@ -117,11 +118,26 @@ main.reduced {
   transition: all 1s;
 }
 
-.fullbg {
-  background-image: url(/img/keyboard.jpg);
-  width: auto;
+header {
+  background-image: url(/img/test1.jpg);
+  width: 100vw;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 5vw;
+  font-weight: lighter;
+  color: FFFFFF;
+}
+
+.mainlogo {
+  display: block;
+  width: 30vw;
+  padding: 10vh 0 0 0;
+  margin: 0 auto;
+  box-shadow: 0 8px 6px -6px black;
 }
