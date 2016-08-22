@@ -1,21 +1,127 @@
 @import 'https://fonts.googleapis.com/css?family=Poppins:300,400,700';
-nav {
+body {
+  background-color: 1A1A1A;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+nav#sidenav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: 1A1A1A;
-  opacity: 0.5;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 3vh;
+  transition: 1s;
+  opacity: 0;
+  transition: opacity .2s;
+  transition-delay: opacity .8s;
 }
 
-a {
+nav#sidenav a {
   text-decoration: none;
   color: ffffff;
   font-weight: 300;
   font-size: 1vw;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 1s;
 }
 
-body {
-  background-color: ffffff;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
+#sidenav.expanded {
+  width: 30vw;
+  opacity: 1;
+  transition: opacity .2s;
+  transition-delay: .8s;
+}
+
+.buttonmenu {
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  transition: 1s;
+}
+
+.buttonmenu h3 {
+  text-align: center;
+  align-items: baseline;
+  line-height: 33px;
+  margin-left: 5px;
+}
+
+.buttonmenu.reduced {
+  margin-left: 30vw;
+  transition: 1s;
+}
+
+.button {
+  height: 33px;
+  margin: auto 0;
+}
+
+.innerbtn {
+  width: 35px;
+  height: 5px;
+  background-color: 1A1A1A;
+}
+
+.bar1, .bar2, .bar3 {
+  transition: 0.4s;
+}
+
+.bar1 {
+  margin: 0px auto 6px auto;
+}
+
+.bar2 {
+  margin: 0px auto 6px auto;
+}
+
+.bar3 {
+  margin: 0px auto;
+}
+
+.animate .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.animate .bar2 {
+  opacity: 0;
+}
+
+.animate .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+main {
+  transition: margin-left 1s;
+  padding: 0px;
+  width: auto;
+  transition: all 1s;
+}
+
+main.reduced {
+  margin-left: 30vw;
+  opacity: 0.5;
+  transition: all 1s;
+}
+
+.fullbg {
+  background-image: url(/img/keyboard.jpg);
+  width: auto;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

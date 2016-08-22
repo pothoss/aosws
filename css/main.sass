@@ -1,7 +1,26 @@
-@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,700'
-@import menu.sass
-
 body
-  background-color: ffffff
+  background-color: 1A1A1A
   font-family: 'Poppins', sans-serif
   margin: 0
+
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,700'
+@import menu
+@import buttonmenu
+
+main
+  transition: margin-left 1s
+  padding: 0px
+  width: auto
+  transition: all 1s
+main.reduced
+  margin-left: 30vw
+  opacity: 0.5
+  transition: all 1s
+
+.fullbg
+  background-image: url(/img/keyboard.jpg)
+  width: auto
+  height: 100vh
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover

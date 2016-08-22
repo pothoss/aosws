@@ -4,16 +4,28 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <title>Alré Ordi Services - Spécialiste du dépannage Informatique & Electronique à Auray(56) et ses alentours.</title>
   </head>
-  <body></body><span onclick="openNav()">
-    <svg></svg>
-    <nav><a href="#">Accueil</a><a href="#">Smartphones & Tablettes</a><a href="#">Informatique</a><a href="#">Multimedia, Hifi & Sono</a><a href="#">Electronique</a><a href="#">Nous contacter</a></nav>
-    <main>
+  <body>
+    <nav id="sidenav"><a href="#">Accueil</a><a href="#">Smartphones & Tablettes</a><a href="#">Informatique</a><a href="#">Multimedia, Hifi & Sono</a><a href="#">Electronique</a><a href="#">Nous contacter</a></nav>
+    <main id="main">
+      <div onclick="swagAnim(this), opencloseNav()" class="buttonmenu">
+        <div class="button">
+          <div class="innerbtn bar1"></div>
+          <div class="innerbtn bar2"></div>
+          <div class="innerbtn bar3"></div>
+        </div>
+        <h3>Menu</h3>
+      </div>
       <header>
+        <div class="fullbg"></div>
         <h1>Alré Ordi Services</h1>
         <h2>Spécialiste du dépannage Informatique & Electronique à Auray(56) et ses alentours.</h2>
       </header>
-    </main></span>
+    </main>
+  </body>
+  <script src="js/vendor/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
 </html>

@@ -1,0 +1,38 @@
+.buttonmenu
+  display: flex
+  cursor: pointer
+  position: fixed
+  top: 5vh
+  left: 5vw
+  transition: 1s
+  h3
+    text-align: center
+    align-items: baseline
+    line-height: 33px
+    margin-left: 5px
+.buttonmenu.reduced
+  margin-left: 30vw
+  transition: 1s
+.button
+  height: 33px
+  margin: auto 0
+
+.innerbtn
+  width: 35px
+  height: 5px
+  background-color: 1A1A1A
+  // margin: 6px auto
+.bar1,.bar2,.bar3
+  transition: 0.4s
+.bar1
+  margin: 0px auto 6px auto
+.bar2
+  margin: 0px auto 6px auto
+.bar3
+  margin: 0px auto
+.animate .bar1
+  transform: rotate(-45deg) translate(-9px, 6px)
+.animate .bar2
+  opacity: 0
+.animate .bar3
+  transform: rotate(45deg) translate(-8px, -8px)
